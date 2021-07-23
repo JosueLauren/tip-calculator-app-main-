@@ -174,3 +174,29 @@ button.reset:hover {
 .attribution a { 
         color: hsl(228, 45%, 44%); 
 }
+
+@media (max-width: 800px) {
+    body {
+        height: auto;
+    }
+    div.calculadora {
+        flex-direction: column;
+        width: 90%;
+    }
+    div.entradas {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    div.entradas-gorgetas {
+        text-align: center;
+    }
+
+    div.display {
+        width: 100%;
+    }
+
+    button.reset {
+        margin-top: 20px;
+    }
+}
