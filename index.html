@@ -16,20 +16,22 @@
     <div class="entradas">
       <label for="conta">Bill <br>
         <input type="number" name="conta" id="conta" min="0">
+        <span class="msg-erroConta">Cont't be zero</span>
       </label>
       <div class="entradas-gorgetas">
         <p>Select Tip %</p>
-        <button class="btns" id="btn-5" value="5" >5%</button>
-        <button class="btns" id="btn-10" value="10">10%</button>
-        <button class="btns" id="btn-15" value="15">15%</button><br>
-        <button class="btns" id="btn-25" value="25">25%</button>
-        <button class="btns" id="btn-50" value="50">50%</button>
+        <button class="btns" id="btn-5" value="0.05" >5%</button>
+        <button class="btns" id="btn-10" value="0.10">10%</button>
+        <button class="btns" id="btn-15" value="0.15">15%</button><br>
+        <button class="btns" id="btn-25" value="0.25">25%</button>
+        <button class="btns" id="btn-50" value="0.50">50%</button>
         <label for="valor-variado">
           <input type="number" name="valor-variado" id="valor-variado" min="0" placeholder="Custom">
         </label>
       </div>
       <label for="n-pessoas">Number of People <br>
         <input type="number" name="n-pessoas" id="n-pessoas" min="1">
+        <span class="msg-erroPessoas">Cont't be zero</span>
       </label>
     </div>
     <div class="display">
@@ -39,17 +41,17 @@
           <p>Tip Amount</p>
           <span>/ person</span>
         </div>
-        <p class="valor-pessoa" >$0.00</p>
+        <p class="valor-pessoa" >$<span>0.00</span></p>
       </div>
       <div class="total-gorgeta">
         <div class="desc-total">
           <p>Total</p>
           <span>/ person</span>
         </div>
-        <p class="valor-total" >$0.00</p>
+        <p class="valor-total" >$<span>0.00</span></p>
       </div>
      </div>
-      <button class="reset">Reset</button>
+      <button class="reset" >Reset</button>
     </div>
   </div>
   <div class="attribution">

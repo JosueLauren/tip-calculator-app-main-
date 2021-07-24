@@ -166,6 +166,16 @@ button.reset:hover {
     background-color: var(--Light-grayish-cyan-fundo);
 }
 
+.msg-erroPessoas, .msg-erroConta{
+    border-color: red;
+    color: red;
+    display: none;
+}
+
+.active {
+    display: block;
+}
+
 
 .attribution { 
     font-size: 11px; 
